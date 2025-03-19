@@ -626,7 +626,7 @@ h6 {
   padding: 4px;
   width: 100%;
   background-color: var(--background-color);
-  color: var(--default-color);
+  color: #3B4FE3;
 }
 
 .footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
