@@ -1,9 +1,3 @@
-/**
-/**
-* Template Name: Fluently
-* Author: EBMCodeName
-
-*/
 (function () {
   "use strict";
 
