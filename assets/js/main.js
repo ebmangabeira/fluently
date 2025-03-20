@@ -1,7 +1,6 @@
 /**
 * Template Name: Fluently
 * Author: EBMCodeName
-
 */
 
 (function() {
@@ -13,7 +12,12 @@
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header') || {};
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
+
+    // Verifica se o header possui classes de sticky/fixed
+    if (!selectHeader.classList.contains('scroll-up-sticky') &&
+        !selectHeader.classList.contains('sticky-top') &&
+        !selectHeader.classList.contains('fixed-top')) return;
+
     window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
   }
 
@@ -41,7 +45,6 @@
         mobileNavToogle();
       }
     });
-
   });
 
   /**
@@ -76,7 +79,7 @@
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
   }
-  scrollTop.addEventListener('click', (e) => {
+  scrollTop && scrollTop.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({
       top: 0,
@@ -128,7 +131,6 @@
       }
     });
   }
-
   window.addEventListener("load", initSwiper);
 
   /**
@@ -143,7 +145,7 @@
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
-  window.addEventListener('load', function(e) {
+  window.addEventListener('load', function() {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
         setTimeout(() => {
@@ -175,7 +177,7 @@
       } else {
         navmenulink.classList.remove('active');
       }
-    })
+    });
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);

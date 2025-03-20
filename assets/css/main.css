@@ -151,6 +151,10 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
+  position: fixed; /* Tornando o cabeçalho flutuante */
+  top: 0;
+  left: 0;
+  width: 100%;
   --background-color: rgba(255, 255, 255, 0);
   --default-color: #ffffff;
   --heading-color: #ffffff;
@@ -161,6 +165,29 @@ h6 {
   z-index: 997;
 }
 
+/* Borda arredondada, background e border do logo até o login */
+.header .container-fluid {
+  background:  rgb(255, 255, 255);  /* Fundo inicialmente transparente */
+  border-radius: 16px;      /* Borda arredondada */
+  padding: 10px 30px;       /* Espaço interno para destacar o contorno */
+  width: 95%;
+  max-width: 1300px;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  border: 2px solid rgba(226, 231, 255, 1);  /* Borda com a cor solicitada */
+}
+@media (max-width: 767px) {
+  .header .container-fluid {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    padding: 16px 8px;
+    width: 95%;
+    max-width: 1300px;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+    border: 2px solid rgba(226, 231, 255, 1);
+  }
+}
+
+
 .header .logo {
   line-height: 1;
 }
@@ -169,6 +196,13 @@ h6 {
   max-height: 32px;
   margin-right: 8px;
 }
+@media (max-width: 767px) {
+  .header .logo img {
+    max-height: 24px;
+    margin-right: 8px;
+  }
+}
+
 
 .header .logo h1 {
   font-size: 30px;
@@ -176,21 +210,22 @@ h6 {
   font-weight: 700;
   color: var(--heading-color);
 }
+
 @media (max-width: 768px) {
   .header .logo h1 {
-      font-size: 18px;  /* Tamanho reduzido para telas menores */
+    font-size: 18px;  /* Tamanho reduzido para telas menores */
   }
 }
 
 
-.scrolled .header {
-  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
-}
-
 /* Global Header on Scroll
 ------------------------------*/
-.scrolled .header {
-  --background-color: #F8F9FF;
+
+
+/* Ao rolar, o container recebe fundo branco e sombra suave */
+.scrolled .container-fluid {
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 /*--------------------------------------------------------------
@@ -209,14 +244,16 @@ h6 {
   display: inline-flex;
   align-items: center;
   font-size: 12px;
-  
 }
+
 .login-btn:hover {
   background-color: #3b4fe3e7;
 }
+
 .login-btn i {
   margin-right: 5px;
 }
+
 @media (max-width: 767px) {
   #navmenu {
     flex-grow: 1;
@@ -224,24 +261,19 @@ h6 {
   }
 }
 
-
 @media (max-width: 767px) {
   .login-btn {
     background-color: #3B4FE3;
     color: #fff;
     border: none;
-    border-radius: 25px;
-    padding: 8px 10px;
+    border-radius: 16px;
+    padding: 6px 10px;
     text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: 2px;
-    font-size: 10px;
-    
+    margin-bottom: 4px;
+    font-size: 8px;
   }
 }
-
-
-
 
 /* Desktop Navigation */
 @media (min-width: 1200px) {
@@ -379,9 +411,9 @@ h6 {
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
-    font-size: 28px;
+    font-size: 26px;
     line-height: 0;
-    margin-right: 10px;
+    margin-right: 12px;
     cursor: pointer;
     transition: color 0.3s;
   }
@@ -500,6 +532,7 @@ h6 {
     display: block;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -1095,7 +1128,7 @@ section,
   background-color: var(--surface-color);
   padding: 50px 40px;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 16px;
   transition: all 0.3s ease-out 0s;
 }
 
