@@ -251,7 +251,7 @@ h6 {
 }
 
 .login-btn:hover {
-  background-color: #3b4fe3e7;
+  background-color: #3b4fe3c8;
 }
 
 .login-btn i {
@@ -1949,6 +1949,12 @@ section,
   cursor: pointer;
   transition: background 0.3s ease;
 }
+
+.early-access-form button:hover {
+  background: #3b4fe3c8 !important; /* Força a prioridade */
+  color: #ffffff; /* Ajuste para manter o contraste no texto */
+}
+
 @media (max-width: 768px) {
   .early-access-form button {
       
