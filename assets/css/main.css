@@ -78,7 +78,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #3B4FE3;
+  color: #293587;
   font-family: var(--heading-font);
 }
 
@@ -533,7 +533,64 @@ h6 {
   }
 }
 
+/*--------------------------------------------------------------
+# Join Beta Section 
+--------------------------------------------------------------*/
+  .join-beta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 0;
+  }
 
+  .early-access-header {
+    flex: 1;
+  }
+
+  .early-access-header h2 {
+    color: #2C3CBF;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .early-access-header h2 span {
+    color: #3B4FE3;
+  }
+
+  .early-access-header p {
+    color: #666;
+    font-size: 18px;
+  }
+
+  .early-access-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .early-access-form input {
+    border: 2px solid #E2E7FF;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 300px;
+    outline: none;
+  }
+
+  .early-access-form button {
+    background: #3B4FE3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .early-access-form button:hover {
+    background: #2C3CBF;
+  }
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
@@ -926,7 +983,7 @@ section,
 .hero p {
   color: #4b5563ce;
   margin: 5px 0 30px 0;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -985,7 +1042,7 @@ section,
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     margin-bottom: 30px;
   }
@@ -1830,4 +1887,75 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+/* Early Access Section */
+.early-access {
+  background: #F8F9FF;
+  border-radius: 16px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  margin-top: 40px;
+}
+
+.early-access-header h2 {
+  font-size: 44px;
+  color: #2C3CBF;
+  margin:20px 0;
+}
+@media (max-width: 768px) {
+  .early-access-header h2 {
+      font-size: 24px; /* Reduzido para se ajustar melhor às telas menores */
+      color: #2C3CBF;
+      margin: 15px 0; /* Ajuste no espaçamento para melhor organização visual */
+  }
+}
+
+
+.early-access-header h2 span {
+  color: #3B4FE3;
+}
+
+.early-access-header p {
+  color: #2E2E2E;
+  margin-bottom: 40px;
+}
+
+.early-access-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.early-access-form input {
+  border: 2px solid #E2E7FF;
+  border-radius: 8px;
+  padding: 12px 20px;
+  width: 300px;
+  outline: none;
+}
+
+.early-access-form button {
+  background: #3B4FE3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+@media (max-width: 768px) {
+  .early-access-form button {
+      
+      
+      padding: 4px 8px;
+      
+      font-size: 14px;
+  }
+}
+
+
+.early-access-form button:hover {
+  background: #2C3CBF;
 }
