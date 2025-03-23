@@ -50,8 +50,8 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
       
-      <!-- Botão de Login com Ícone -->
-      <a href="#" class="btn btn-primary login-btn">
+      <!-- Botão de Login -->
+      <a href="#" class="login-btn">
         <i class="bi bi-box-arrow-in-right"></i> Login
       </a>
     </div>
@@ -61,29 +61,30 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-      <!-- Carrossel com Swiper -->
+      <!-- Swiper Carousel -->
       <div class="swiper hero-carousel">
         <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/img/hero-bg-2.webp" alt="" class="hero-bg">
+          </div>
           <div class="swiper-slide">
             <img src="assets/img/hero-bg-2.1.webp" alt="" class="hero-bg">
           </div>
           <div class="swiper-slide">
-            <img src="assets/img/hero-bg-2.jpg" alt="" class="hero-bg">
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/img/hero-bg-4.jpg" alt="" class="hero-bg">
+            <img src="assets/img/hero-bg-2.2.webp" alt="" class="hero-bg">
           </div>
         </div>
-        <!-- Ocultando a paginação via CSS -->
+        <!-- Ocultando a paginação -->
         <div class="swiper-pagination"></div>
       </div>
 
       <div class="container">
         <div class="row gy-4 justify-content-between">
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
-            <div class="container text-center">
+            <div class="container">
               <div class="early-access-header">
-                <h2>Transform your speech  with <br><span>AI-powered therapy</span><br><span>anytime, anywhere</span></h2>
+                <!-- Alinhado à esquerda -->
+                <h2 style="text-align: left;">Transform your speech with <br><span>AI-powered therapy</span><br><span>anytime, anywhere</span></h2>
               </div>
             </div>
           </div>
@@ -109,13 +110,13 @@
     <!-- Try Section -->
     <section id="features" class="try section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <!-- Linha superior: Conteúdo principal -->
+        <!-- Conteúdo Principal -->
         <div class="row justify-content-center align-items-center gy-5">
           <div class="col-xl-5 content text-center">
-            <h2 style="color: #293587;">AI-Powered Speech Therapy</h2>
+            <h2>AI-Powered Speech Therapy</h2>
+
             <p>
-              Transform your speech with AI-powered therapy anytime, anywhere.
-              Experience professional-grade speech therapy powered by artificial intelligence. 
+              Experience professional-grade speech therapy powered by artificial intelligence.
               Practice at your own pace with real-time feedback and personalized exercises.
             </p>
             <a href="#" class="read-more">
@@ -123,8 +124,7 @@
             </a>
           </div>
         </div>
-        
-        <!-- Linha inferior: Cards dispostos horizontalmente -->
+        <!-- Cards -->
         <div class="row gy-4 icon-boxes horizontal-cards" data-aos="fade-up" data-aos-delay="100">
           <div class="col-md-3">
             <div class="icon-box">
@@ -166,8 +166,8 @@
             <i class="bi bi-people"></i>
             <div class="stats-item">
               <span>
-                <span data-purecounter-start="0" data-purecounter-end="80" data-purecounter-duration="1" class="purecounter" style="display:inline-block;"></span>
-                <span style="display:inline-block; margin-left: -8px;">M+</span>
+                <span data-purecounter-start="0" data-purecounter-end="80" data-purecounter-duration="1" class="purecounter"></span>
+                <span>M+</span>
               </span>
               <p>People who stutter worldwide</p>
             </div>
@@ -176,7 +176,7 @@
             <i class="bi-wallet2"></i>
             <div class="stats-item">
               <span>
-                <span style="display:inline-block;">$</span> <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="1" class="purecounter" style="display:inline-block; margin-left:-5px;"></span>
+                <span>$</span> <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="1" class="purecounter"></span>
               </span>
               <p>Average therapy cost saved</p>
             </div>
@@ -184,8 +184,8 @@
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-list-check"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="purecounter" style="display:inline-block;"></span>
-              <span style="display:inline-block;">+</span>
+              <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="purecounter"></span>
+              <span>+</span>
               <p>Custom Exercises Available</p>
             </div>
           </div>
@@ -193,8 +193,8 @@
             <i class="bi bi-graph-up-arrow"></i>
             <div class="stats-item">
               <span>
-                <span data-purecounter-start="0" data-purecounter-end="92" data-purecounter-duration="1" class="purecounter" style="display:inline-block;"></span>
-                <span style="display:inline-block; margin-left: -8px;">%</span>
+                <span data-purecounter-start="0" data-purecounter-end="92" data-purecounter-duration="1" class="purecounter"></span>
+                <span>%</span>
               </span>
               <p>Success rate</p>
             </div>
@@ -203,6 +203,7 @@
       </div>
     </section><!-- /Stats Section -->
 
+    <!-- Early Access Section -->
     <section class="early-access section">
       <div class="container">
         <div class="early-access-content">
@@ -210,7 +211,6 @@
             <h2>Ready to transform your speech with <span>AI technology</span>?</h2>
             <p>Join our waitlist to be among the first to experience AI-powered speech therapy that adapts to your needs.</p>
           </div>
-    
           <div class="early-access-container">
             <div class="early-access-form">
               <input type="email" placeholder="Enter your email">
@@ -265,10 +265,10 @@
           <p class="footer-links-p">Install our app now for Android and iOS and enjoy seamless AI-powered speech therapy on the go.</p>
           <div class="app-links">
             <a href="" target="_blank">
-              <img src="assets/img/goople-play.png" alt="Google Play">
+              <img src="assets/img/google-play.png" alt="Google Play">
             </a>
             <a href="" target="_blank">
-              <img src="assets/img/apple-store.png" alt="App Store">
+              <img src="assets/img/app-store.png" alt="App Store">
             </a>
           </div>
         </div>
