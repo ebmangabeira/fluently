@@ -1,9 +1,3 @@
-/* Global Styles */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 /**
 * Template Name: Fluently
 * Author: EBMCodeName
@@ -56,6 +50,12 @@ img {
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
+}
+
+/* Global Styles */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*--------------------------------------------------------------
