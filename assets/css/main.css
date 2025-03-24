@@ -1,3 +1,9 @@
+/* Global Styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /**
 * Template Name: Fluently
 * Author: EBMCodeName
@@ -113,12 +119,9 @@ h6 {
 }
 @media (max-width: 768px) {
   .header {
-    
     padding: 20px 10px;
-    
   }
 }
-
 
 @media (max-width: 767px) {
   .header .container-fluid {
@@ -612,7 +615,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 20%);
+  background: color-mix(in srgb, var(--background-color), transparent 55%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -766,7 +769,7 @@ section,
     opacity: 1;
     -webkit-transform: none;
     transform: none;
-    padding: 0px 10px;
+    padding: 0px 12px;
   }
 }
 
@@ -880,7 +883,6 @@ section,
 
 @media (min-width: 768px) {
   .try .content h2 {
-    
     white-space: nowrap;
   }
 }
@@ -889,7 +891,6 @@ section,
     padding: 0 16px;
   }
 }
-
 
 @media (max-width: 992px) {
   .horizontal-cards > div[class*="col-"] {
@@ -908,8 +909,6 @@ section,
   margin-right: 2px !important;
   margin-left: auto !important;
 }
-
-
 
 /*--------------------------------------------------------------
 # Early Access Section
@@ -931,7 +930,7 @@ section,
   color: #ffffff;
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin: 10px 0px 0px -10px;
   text-align: left;
 }
 .early-access-new-header {
@@ -944,7 +943,7 @@ section,
   font-size: 39px;
   font-weight: 600;
   color: var(--heading-color);
-  margin: 20px -10px;
+  margin: 20px 0px;
 }
 
 .early-access-new-header h2 span {
@@ -953,7 +952,7 @@ section,
 
 .early-access-new-header p {
   color: #4B4E4E;
-  margin: 0px -10px;
+  margin: 0px -12px;
 }
 
 .early-access-container {
@@ -967,7 +966,7 @@ section,
   align-items: center;
   background: #ffffff;
   border-radius: 12px;
-  padding: 10px 5px 0px 15px;
+  padding: 0px 10px 0px 10px;
 }
 
 .early-access-form input {
@@ -1019,9 +1018,7 @@ section,
     margin: 8px 0 0 -24px;
   }
   .early-access-header h2 {
-    
     margin: 10px 0 0 -8px;
-    
   }
 }
 
@@ -1093,9 +1090,8 @@ section,
   justify-content: center;
   font-weight: 700;
   color: var(--accent-color);
-  gap: 5px; /* Espaçamento entre os elementos */
+  gap: 5px;
 }
-
 
 .stats .stats-item p {
   padding: 0;
@@ -1138,15 +1134,13 @@ section,
   color: var(--heading-color);
 }
 .footer-newsletter .app-links img {
-  width: 100px; /* Tamanho definido; ajuste se necessário */
+  width: 100px;
   height: auto;
   object-fit: contain;
 }
 .footer-newsletter .app-links a {
-  margin: 0px 40px 0px 0px; /* Ajuste o valor conforme necessário */
+  margin: 0px 40px 0px 0px;
 }
-
-
 
 .footer .footer-about p {
   font-size: 16px;
@@ -1239,8 +1233,6 @@ section,
 .footer .footer-newsletter .newsletter-form:focus-within {
   border-color: var(--accent-color);
 }
-
-
 
 .footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
   outline: none;
