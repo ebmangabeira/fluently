@@ -761,6 +761,15 @@ section,
 /*--------------------------------------------------------------
 # Try Section
 --------------------------------------------------------------*/
+@media (min-width: 1024px) {
+  html:not(.no-js) [data-aos^="fade"].aos-animate {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    padding: 0px 10px;
+  }
+}
+
 .try {
   padding: 120px 0 160px 0;
 }
@@ -935,7 +944,7 @@ section,
   font-size: 39px;
   font-weight: 600;
   color: var(--heading-color);
-  margin: 20px 0;
+  margin: 20px -10px;
 }
 
 .early-access-new-header h2 span {
@@ -944,6 +953,7 @@ section,
 
 .early-access-new-header p {
   color: #4B4E4E;
+  margin: 0px -10px;
 }
 
 .early-access-container {
@@ -957,7 +967,7 @@ section,
   align-items: center;
   background: #ffffff;
   border-radius: 12px;
-  padding: 10px 15px;
+  padding: 10px 5px 0px 15px;
 }
 
 .early-access-form input {
@@ -997,7 +1007,7 @@ section,
 /* Mobile Early Access adjustments */
 @media (max-width: 768px) {
   .early-access-new-header p {
-    margin: 8px 0 0 -16px;
+    margin: 8px 0 0 -24px;
   }
 }
 
@@ -1026,7 +1036,7 @@ section,
   .early-access-new-header h2 {
     font-size: 40px;
     color: var(--heading-color);
-    margin: 0px 0px 0px -16px;
+    margin: 0px 0px 0px -24px;
   }
   .early-access-form button {
     padding: 4px 8px;
@@ -1088,7 +1098,7 @@ section,
   background-color:#fbfbfb;
   font-size: 16px;
   position: relative;
-  padding: 0 16px;
+  padding: 0 8px;
 }
 
 .footer .footer-top {
