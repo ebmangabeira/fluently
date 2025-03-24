@@ -1003,11 +1003,25 @@ section,
   text-align: center !important;
   padding: 0 16px;
 }
+@media (max-width: 768px) {
+  .early-access-header h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px 0 0 -8px;
+    text-align: left;
+  }
+}
 
 /* Mobile Early Access adjustments */
 @media (max-width: 768px) {
   .early-access-new-header p {
     margin: 8px 0 0 -24px;
+  }
+  .early-access-header h2 {
+    
+    margin: 10px 0 0 -8px;
+    
   }
 }
 
