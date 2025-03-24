@@ -224,7 +224,7 @@ h6 {
     padding: 15px 14px;
   }
   .navmenu>ul>li:last-child {
-    padding-right: 0;
+    padding-right: 40px;
   }
   .navmenu a,
   .navmenu a:focus {
