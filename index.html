@@ -42,7 +42,6 @@
           <li><a href="#join" class="active">Join Beta</a></li>
           <li><a href="#about">About</a></li> 
           <li><a href="#features">Features</a></li>
-          
           <li><a href="#pricing">Pricing</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -62,13 +61,27 @@
       <div class="swiper hero-carousel">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="assets/img/hero-bg-2.webp" alt="" class="hero-bg">
+            <picture>
+              <!-- Imagem para dispositivos mobile -->
+              <source media="(max-width: 768px)" srcset="assets/img/hero-bg-2-mobile.webp">
+              <!-- Imagem para desktops -->
+              <source media="(min-width: 769px)" srcset="assets/img/hero-bg-2.webp">
+              <img src="assets/img/hero-bg-2.webp" alt="" class="hero-bg">
+            </picture>
           </div>
           <div class="swiper-slide">
-            <img src="assets/img/hero-bg-2.1.webp" alt="" class="hero-bg">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/img/hero-bg-2.1-mobile.webp">
+              <source media="(min-width: 769px)" srcset="assets/img/hero-bg-2.1.webp">
+              <img src="assets/img/hero-bg-2.1.webp" alt="" class="hero-bg">
+            </picture>
           </div>
           <div class="swiper-slide">
-            <img src="assets/img/hero-bg-2.2.webp" alt="" class="hero-bg">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/img/hero-bg-2.2-mobile.webp">
+              <source media="(min-width: 769px)" srcset="assets/img/hero-bg-2.2.webp">
+              <img src="assets/img/hero-bg-2.2.webp" alt="" class="hero-bg">
+            </picture>
           </div>
         </div>
         <!-- Oculta a paginação -->
