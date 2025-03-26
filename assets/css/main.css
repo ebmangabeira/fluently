@@ -915,6 +915,9 @@ section,
 /*--------------------------------------------------------------
 # Early Access Section
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Early Access Section
+--------------------------------------------------------------*/
 .early-access {
   background: #ffffff;
   padding: 160px 30px;
@@ -928,13 +931,15 @@ section,
   gap: 50px;
   flex-wrap: wrap;
 }
+
 .early-access-header h2 {
   color: #ffffff;
   font-size: 40px;
   font-weight: 700;
-  margin: 10px 0px 0px -10px;
+  margin: 10px 0 0 -10px;
   text-align: left;
 }
+
 .early-access-new-header {
   flex: 1;
   max-width: 50%;
@@ -945,7 +950,7 @@ section,
   font-size: 39px;
   font-weight: 600;
   color: var(--heading-color);
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 .early-access-new-header h2 span {
@@ -954,7 +959,7 @@ section,
 
 .early-access-new-header p {
   color: #4B4E4E;
-  margin: 0px -12px;
+  margin: 0 -12px;
 }
 
 .early-access-container {
@@ -968,19 +973,15 @@ section,
   align-items: center;
   background: #ffffff;
   border-radius: 12px;
-  padding: 0px 10px 0px 10px;
+  padding: 0 10px;
+  flex-wrap: nowrap;
 }
-.early-access-form input,
-.early-access-form button {
-  flex: 1;
-}
-
 
 .early-access-form input {
+  flex: 1;
   border: 2px solid #E2E7FF;
   border-radius: 8px;
   padding: 12px 20px;
-  flex: 1;
   background: #ffffff;
   outline: none;
   font-size: 16px;
@@ -992,13 +993,17 @@ section,
 }
 
 .early-access-form button {
+  flex: 0 0 auto;
   background: var(--accent-color);
   color: var(--contrast-color);
   border: none;
   border-radius: 8px;
-  padding: 12px 20px;
+  padding: 12px 16px;
+  font-size: 16px;
   cursor: pointer;
   transition: background 0.3s ease;
+  white-space: nowrap;
+  max-width: 160px;
 }
 
 .early-access-form button:hover {
@@ -1009,69 +1014,64 @@ section,
   text-align: center !important;
   padding: 0 16px;
 }
+
+/* Mobile Adjustments */
 @media (max-width: 768px) {
+  .early-access {
+    padding: 60px 16px;
+  }
+
   .early-access-header h2 {
-    color: #ffffff;
     font-size: 40px;
     font-weight: 700;
     margin: 10px 0 0 -8px;
     text-align: left;
   }
-}
 
-/* Mobile Early Access adjustments */
-@media (max-width: 768px) {
   .early-access-new-header p {
     margin: 8px 0 0 -24px;
   }
-  .early-access-header h2 {
-    margin: 10px 0 0 -8px;
+
+  .early-access-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .early-access-new-header,
+  .early-access-container {
+    max-width: 100%;
+  }
+
+  .early-access-new-header h2 {
+    font-size: 40px;
+    margin: 0 0 0 -24px;
+  }
+
+  .early-access-form {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .early-access-form input {
+    width: 155%;
+  }
+
+  .early-access-form button {
+    margin-top: 10px;
+    width: 40%; /* botão menor que o input */
+    max-width: none;
+    display: block;
   }
 }
 
+/* Evita quebra de texto em telas médias */
 @media (min-width: 768px) {
   .content h2 {
     white-space: nowrap;
   }
 }
 
-@media (max-width: 768px) {
-  .early-access {
-    padding: 60px 16px;
-  }
-  .text-center {
-    text-align: center !important;
-    padding: 0 16px;
-  }
-  .early-access-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .early-access-new-header,
-  .early-access-container {
-    max-width: 100%;
-  }
-  .early-access-new-header h2 {
-    font-size: 40px;
-    color: var(--heading-color);
-    margin: 0px 0px 0px -24px;
-  }
-  .early-access-form {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .early-access-form input,
-  .early-access-form button {
-    width: 100%;
-    padding: 12px 20px;
-    font-size: 16px;
-  }
-
-  .early-access-form button {
-    margin-top: 10px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Stats Section
