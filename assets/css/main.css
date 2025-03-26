@@ -2,7 +2,9 @@
 * Template Name: Fluently
 * Author: EBMCodeName
 */
-
+body {
+  overflow-x: hidden;
+}
 /*--------------------------------------------------------------
 # Font & Color Variables
 --------------------------------------------------------------*/
@@ -609,10 +611,13 @@ section,
   height: 100%;
 }
 
-.hero .hero-carousel .swiper-slide img.hero-bg {
+/* Garante que imagens do carrossel não ultrapassem a tela */
+.hero-carousel .swiper-slide img.hero-bg {
+  max-width: 100vw;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .hero:before {
