@@ -615,7 +615,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 55%);
+  background: color-mix(in srgb, var(--background-color), transparent 45%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -775,6 +775,7 @@ section,
 
 .try {
   padding: 120px 0 160px 0;
+  margin-top: 40px;
 }
 
 .try .content h2 {
@@ -872,6 +873,7 @@ section,
 @media (max-width: 768px) {
   .try {
     padding: 60px 0 60px 0;
+    margin-top: 20px;
   }
 }
 
@@ -968,6 +970,11 @@ section,
   border-radius: 12px;
   padding: 0px 10px 0px 10px;
 }
+.early-access-form input,
+.early-access-form button {
+  flex: 1;
+}
+
 
 .early-access-form input {
   border: 2px solid #E2E7FF;
@@ -1050,8 +1057,8 @@ section,
     margin: 0px 0px 0px -24px;
   }
   .early-access-form button {
-    padding: 4px 8px;
-    font-size: 14px;
+    padding: 12px 20px;
+    font-size: 16px;
   }
 }
 
