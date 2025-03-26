@@ -1059,9 +1059,10 @@ section,
 
   .early-access-form button {
     margin-top: 10px;
-    width: 40%; /* botão menor que o input */
+    width: 50%; /* botão menor que o input */
     max-width: none;
     display: block;
+    font-weight: 600
   }
 }
 
