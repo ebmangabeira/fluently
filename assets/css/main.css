@@ -2,6 +2,9 @@
 * Template Name: Fluently
 * Author: EBMCodeName
 */
+* {
+  outline: 1px solid red;
+}
 
 /*--------------------------------------------------------------
 # Font & Color Variables
@@ -594,8 +597,10 @@ section,
   inset: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden; /* <- ESSENCIAL PARA EVITAR ESTOURO */
   z-index: 0;
 }
+
 
 .hero .hero-carousel .swiper-wrapper {
   width: 100%;
