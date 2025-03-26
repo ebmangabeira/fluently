@@ -2,6 +2,9 @@
 * Nome do Template: Fluently
 * Autor: EBMCodeName
 */
+body {
+  overflow-x: hidden;
+}
 /*--------------------------------------------------------------
 # Variáveis de Fontes e Cores
 --------------------------------------------------------------*/
