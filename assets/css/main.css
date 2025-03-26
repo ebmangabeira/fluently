@@ -1082,7 +1082,7 @@ section,
   .try .content h2 {
     white-space: normal !important; /* Permite a quebra de linha */
     overflow-wrap: break-word;       /* Força a quebra caso a palavra seja muito longa */
-    font-size: 28px !important;       /* Ajuste o tamanho da fonte para telas menores */
+    font-size: 40px !important;       /* Ajuste o tamanho da fonte para telas menores */
     line-height: 1.2 !important;      /* Ajuste a altura de linha para melhor leitura */
     padding: 0 15px;                 /* Espaço interno para evitar que o texto encoste nas bordas */
   }
